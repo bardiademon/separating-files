@@ -1,29 +1,35 @@
 package bardiademon;
 
+@bardiademon
 class CreateOption
 {
     static final int OPTION_EXIT = 0;
 
+    @bardiademon
     CreateOption ()
     {
 
     }
 
+    @bardiademon
     CreateOption (String... Options)
     {
         create (Options);
     }
 
+    @bardiademon
     void create (String[] options)
     {
         create (options , false);
     }
 
+    @bardiademon
     void create (String[] options , boolean optionExit)
     {
         create (options , optionExit , true);
     }
 
+    @bardiademon
     void create (String[] options , boolean optionExit , boolean breakNewLine)
     {
         System.out.println ();

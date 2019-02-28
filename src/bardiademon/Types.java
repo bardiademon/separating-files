@@ -7,11 +7,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+@bardiademon
 class Types
 {
 
     private List<File> fileList = new ArrayList<> ();
 
+    @bardiademon
     Types (File _File , List<String> Names , List<String> Types)
     {
         BufferedReader reader = new BufferedReader (new InputStreamReader (System.in));
@@ -47,6 +49,7 @@ class Types
         }
     }
 
+    @bardiademon
     private void getFile (File file , String input)
     {
         switch (input)

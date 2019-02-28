@@ -1,5 +1,6 @@
 package bardiademon;
 
-public interface bardiademon
+@bardiademon
+@interface bardiademon
 {
 }

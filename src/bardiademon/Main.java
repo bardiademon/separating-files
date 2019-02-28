@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+@bardiademon
 public class Main
 {
     private static final String SPLIT_ALL_TYPE = "1", INPUT_TYPE = "2", SELECTED_DIR = "3";
@@ -17,6 +18,7 @@ public class Main
     private static final String COMPLETE_FOR_AUTO_PUT = ".type.";
     static final String DEFAULT_NAME_DIR = "..DEFAULT..";
 
+    @bardiademon
     public static void main (String[] args)
     {
         JFileChooser chooser = new JFileChooser ();
@@ -111,6 +113,7 @@ public class Main
         }
     }
 
+    @bardiademon
     private static void TryAgain ()
     {
         new CreateOption ().create (new String[]{"Select Dir"} , true);

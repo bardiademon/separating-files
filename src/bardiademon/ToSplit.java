@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@bardiademon
 class ToSplit
 {
     private static final int MAX_START_THREAD = 5;
@@ -21,12 +22,14 @@ class ToSplit
     private long sizeComplete = 0;
     private List<ThreadCopy> listThread;
 
+    @bardiademon
     ToSplit (File _File)
     {
         this.file = _File;
         toSplitAllType ();
     }
 
+    @bardiademon
     ToSplit (File _File , String NameDir , String NewType)
     {
         this.file = _File;
@@ -35,6 +38,7 @@ class ToSplit
         toSplit ();
     }
 
+    @bardiademon
     private void toSplitAllType ()
     {
         foundAllType ();
@@ -71,6 +75,7 @@ class ToSplit
         }
     }
 
+    @bardiademon
     boolean testStartThreadCopy ()
     {
         if (listThread == null) return false;
@@ -78,6 +83,7 @@ class ToSplit
         return false;
     }
 
+    @bardiademon
     private int progress (int max , long sizeComplete)
     {
         float min = ((float) (sizeComplete * totalFile)) / 100;
@@ -97,6 +103,7 @@ class ToSplit
         return max;
     }
 
+    @bardiademon
     private void copy (File file , File newDir)
     {
         while ((threadStart >= MAX_START_THREAD))
@@ -113,6 +120,7 @@ class ToSplit
         ++threadStart;
     }
 
+    @bardiademon
     class ThreadCopy extends Thread
     {
         private boolean start;
@@ -120,6 +128,7 @@ class ToSplit
         private File newDir;
         private File file;
 
+        @bardiademon
         ThreadCopy (File file , File newDir)
         {
             this.file = file;
@@ -145,12 +154,14 @@ class ToSplit
             --threadStart;
         }
 
+        @bardiademon
         boolean isStart ()
         {
             return start;
         }
     }
 
+    @bardiademon
     private void foundAllType ()
     {
         String type;
@@ -166,6 +177,7 @@ class ToSplit
         }
     }
 
+    @bardiademon
     private List<File> foundFileType (String type)
     {
         File[] files = file.listFiles ();
@@ -179,6 +191,7 @@ class ToSplit
         return null;
     }
 
+    @bardiademon
     private boolean moreType1 (File file)
     {
         String extension = FilenameUtils.getExtension (file.getPath ());
@@ -193,6 +206,7 @@ class ToSplit
         return false;
     }
 
+    @bardiademon
     private void toSplit ()
     {
         List<File> files = foundFileType (type);

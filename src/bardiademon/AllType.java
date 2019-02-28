@@ -5,8 +5,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+@bardiademon
 class AllType
 {
+    @bardiademon
     AllType (File _File)
     {
         try

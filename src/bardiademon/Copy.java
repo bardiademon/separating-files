@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+@bardiademon
 class Copy
 {
+    @bardiademon
     Copy (FileInputStream fileInputStream , FileOutputStream fileOutputStream) throws IOException
     {
         final byte[] buffer = new byte[1024];
