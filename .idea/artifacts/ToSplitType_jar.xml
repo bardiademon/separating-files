@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ToSplitType:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ToSplitType_jar</output-path>
+    <root id="archive" name="ToSplitType.jar">
+      <element id="module-output" name="SeparatingFiles" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../MyJar/jar/FindAllFile.jar" path-in-jar="/" />
+      <element id="library" level="project" name="FindAllFile" />
+    </root>
+  </artifact>
+</component>
